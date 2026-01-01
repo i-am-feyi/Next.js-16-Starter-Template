@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackFileSystemCacheForDev: true,
   },
+  typedRoutes: true,
 };
 
 export default nextConfig;
