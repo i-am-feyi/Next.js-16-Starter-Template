@@ -26,7 +26,7 @@ const eslintConfig = defineConfig([
       "prefer-arrow-callback": ["error"],
       semi: ["error"],
       quotes: ["error", "double"],
-      // "n/no-process-env": ["error"],
+      "n/no-process-env": ["error"],
       "check-file/filename-naming-convention": [
         "error",
         {
@@ -43,6 +43,14 @@ const eslintConfig = defineConfig([
           "./**/!^[": "KEBAB_CASE",
         },
       ],
+      // "no-restricted-properties": [
+      //   "warn",
+      //   {
+      //     object: "process",
+      //     property: "env",
+      //     message: "Use the env object instead of process.env",
+      //   },
+      // ],
     },
   },
 ]);
